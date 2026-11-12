@@ -1,0 +1,16 @@
+service,protocol,port,ndpi_id,encrypted,prohibited,note
+ssh,tcp,22,92,true,false,
+https,tcp,443,91,true,false,TLS
+rdp,tcp,3389,88,true,false,RDP with TLS (assumed enforced)
+ldaps,tcp,636,91,true,false,LDAP over TLS
+kerberos,tcp,88,111,true,false,
+db-tls,tcp,1433,114,true,false,MSSQL TDS; TLS enforced by policy (assumption)
+postgres-tls,tcp,5432,19,true,false,PostgreSQL; TLS enforced by policy (assumption)
+smb3,tcp,445,41,true,false,SMB 2/3 with encryption (assumption)
+dns,udp,53,5,false,false,Allowed only to DNS-SRV (not a Critical Information Asset)
+ntp,udp,123,9,false,false,Allowed only to NTP on DNS-SRV
+syslog,udp,514,17,false,false,Allowed only to LOG-SRV
+telnet,tcp,23,77,false,true,Prohibited (POL-NS-03)
+ftp,tcp,21,1,false,true,Prohibited (POL-NS-03)
+http,tcp,80,7,false,true,Prohibited to internal systems (POL-NS-03)
+smbv1,tcp,139,16,false,true,Prohibited (POL-NS-03); NetBIOS session port used as proxy

@@ -1,0 +1,15 @@
+src_zone,dst_zone,services
+USER,SERVER,https;smb3;rdp;dns;ntp
+USER,MANAGEMENT,kerberos;ldaps;rdp
+USER,DMZ,https
+USER,INTERNET,https
+SERVER,DATABASE,db-tls;postgres-tls
+SERVER,MANAGEMENT,kerberos;ldaps;syslog
+SERVER,SERVER,https;smb3;syslog;dns;ntp
+SERVER,INTERNET,https
+DMZ,SERVER,https
+INTERNET,DMZ,https
+MANAGEMENT,SERVER,ssh;rdp;https;kerberos;ldaps
+MANAGEMENT,DATABASE,ssh;db-tls;postgres-tls
+MANAGEMENT,DMZ,ssh;https
+MANAGEMENT,MANAGEMENT,ssh;https;kerberos;ldaps

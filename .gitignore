@@ -1,0 +1,41 @@
+# ---------------------------------------------------------------------------
+# Data: every dataset, generated evidence, answer key and experiment output.
+# All of it is rebuilt by `python reproduce.py`; the real public datasets
+# (CERT, LANL, UQ NetFlow, Amazon) must be downloaded separately (see README).
+# ---------------------------------------------------------------------------
+data/
+*.jsonl.gz
+*.parquet
+
+# LLM call logs (data/llm_runs/ is already covered above; kept explicit)
+llm_runs/
+
+# ---------------------------------------------------------------------------
+# Unpublished thesis chapters: kept out of the public repository so that the
+# final thesis is not matched against its own draft by similarity checkers.
+# ---------------------------------------------------------------------------
+docs/
+
+# Third-party binaries (download per OS, see README): Open Policy Agent
+bin/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.ipynb_checkpoints/
+
+# Secrets and local settings
+.env
+.env.*
+*.key
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*

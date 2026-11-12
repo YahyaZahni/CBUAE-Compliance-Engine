@@ -1,0 +1,17 @@
+asset_id,hostname,ip,zone,critical_information_asset,classification,owner_role,description
+CORE-DB,core-db01,10.30.0.10,DATABASE,true,Restricted,FinanceManager,Core banking ledger database
+CUST-DB,cust-db01,10.30.0.11,DATABASE,true,Restricted,ComplianceOfficer,Customer and KYC records (Personal Data)
+HR-DB,hr-db01,10.30.0.12,DATABASE,true,Restricted,HRSpecialist,Employee records (Personal Data)
+PAY-APP,pay-app01,10.20.0.20,SERVER,true,Confidential,PaymentsSupervisor,Payments initiation and release
+GL-APP,gl-app01,10.20.0.21,SERVER,true,Confidential,FinanceManager,General ledger application
+LOAN-APP,loan-app01,10.20.0.22,SERVER,true,Confidential,CreditManager,Loan origination
+TRADE-APP,trade-app01,10.20.0.23,SERVER,true,Confidential,Trader,Treasury trading and settlement
+AD-DC,ad-dc01,10.40.0.5,MANAGEMENT,true,Restricted,ITAdmin,Directory and authentication
+FW-MGMT,fw-mgmt01,10.40.0.6,MANAGEMENT,true,Restricted,NetworkEngineer,Firewall management console
+FILE-SRV,file-srv01,10.20.0.30,SERVER,false,Internal,ITAdmin,Departmental file shares
+REPORT-SRV,report-srv01,10.20.0.31,SERVER,false,Internal,FinanceManager,Management reporting
+DEV-SRV,dev-srv01,10.20.0.32,SERVER,false,Internal,Developer,Development and test
+DNS-SRV,dns-srv01,10.20.0.2,SERVER,false,Internal,NetworkEngineer,DNS and NTP
+LOG-SRV,log-srv01,10.20.0.3,SERVER,false,Internal,ITAdmin,Log collection
+WEB-PORTAL,web-portal01,172.16.0.10,DMZ,false,Public,RelationshipManager,Customer web portal
+JUMP-HOST,jump01,10.40.0.7,MANAGEMENT,false,Internal,ITAdmin,Administrative jump host for privileged access

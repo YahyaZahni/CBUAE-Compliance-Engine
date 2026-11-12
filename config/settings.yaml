@@ -1,0 +1,22 @@
+# Thresholds taken from the sample policy (catalogue/sample_policy.json).
+leaver_grace_days: 1            # POL-IM-02
+review_window_days: 90          # POL-AC-04
+period: W-SUN                   # one assessment period = one calendar week (pandas frequency)
+split:                          # time-based split by fraction of periods (Arp et al., 2022; Pendlebury et al., 2019)
+  train: 0.50
+  validation: 0.20
+  test: 0.30
+sample:
+  seed: 42
+  start: "2026-01-05"
+  weeks: 26
+  people: 160
+  service_accounts: 12
+  ai_agents: 4
+injection:
+  seed: 7
+  per_criterion: 12             # planted nonconformities per technical criterion
+  policy_variants: 40            # policy versions with removed, hollow or relocated topics (document-level key)
+# Authentication to these assets is directory (Kerberos/LDAP) authentication, not use of the asset's data, so it is
+# not treated as entitlement use (AC-05) or as access to a Critical Information Asset (AC-08).
+directory_assets: [AD-DC]

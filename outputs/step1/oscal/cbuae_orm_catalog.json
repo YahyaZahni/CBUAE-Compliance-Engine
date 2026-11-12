@@ -1,0 +1,1425 @@
+{
+  "catalog": {
+    "uuid": "91289195-fa17-5e68-a1fd-6117716041e0",
+    "metadata": {
+      "title": "CBUAE Operational Risk Management Regulation (C 1/2026): Articles 7 and 8, thesis scope",
+      "last-modified": "2026-11-10T19:13:43+00:00",
+      "version": "0.1",
+      "oscal-version": "1.1.3",
+      "props": [
+        {
+          "name": "keywords",
+          "value": "CBUAE, conformity, ICT, cybersecurity"
+        }
+      ],
+      "remarks": "Verbatim text retrieved 2026-11-09 from https://rulebook.centralbank.ae/en/rulebook/operational-risk-management-regulation. Assessment objectives are the thesis criteria."
+    },
+    "groups": [
+      {
+        "id": "art-7",
+        "title": "Article 7: Internal Control System",
+        "controls": [
+          {
+            "id": "cbuae-orm-7-4-2",
+            "title": "Art. 7.4.2",
+            "props": [
+              {
+                "name": "label",
+                "value": "7.4.2"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cbuae-orm-7-4-2_smt",
+                "name": "statement",
+                "prose": "Segregation of duties;"
+              },
+              {
+                "id": "cbuae-orm-7-4-2_obj_ac-01",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-01"
+                  }
+                ],
+                "prose": "At the end of the period, no identity holds both entitlements of any pair listed in the Segregation of Duties matrix.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-2_obj_ac-01_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-2_obj_ac-01_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "Entitlement snapshot (from OCSF 3005 User Access Management events); config/sod_matrix.csv"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "cbuae-orm-7-4-5",
+            "title": "Art. 7.4.5",
+            "props": [
+              {
+                "name": "label",
+                "value": "7.4.5"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cbuae-orm-7-4-5_smt",
+                "name": "statement",
+                "prose": "Safeguards for access to and use of the LFI\u2019s assets or those entrusted to the LFI, including data, and measures for the early detection and reporting of unauthorized access or misuse of assets;"
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-02",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-02"
+                  }
+                ],
+                "prose": "An identity whose HR termination date has passed is disabled no later than one business day (Monday to Friday, the UAE working week) after termination, and has no successful authentication after that deadline.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-02_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-02_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "HR/LDAP snapshots (CERT LDAP monthly files); OCSF 3001 Account Change; OCSF 3002 Authentication"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-04",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-04"
+                  }
+                ],
+                "prose": "Every entitlement held that is not in the holder's role baseline is backed by an approved access request dated on or before the grant.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-04_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-04_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "Entitlement snapshot; Access request and approval records; config/role_entitlements.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-05",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-05"
+                  }
+                ],
+                "prose": "No entitlement held at the end of the period has gone unused for longer than the review window (90 days). Evaluated only once 90 days of activity evidence exist.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-05_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-05_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "Entitlement snapshot; OCSF 3002 Authentication to the entitlement's asset"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-06",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-06"
+                  }
+                ],
+                "prose": "Entitlements held are justified by the holder's role and peer group, even when a formal approval exists.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-06_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-06_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "Identity-role-entitlement-asset graph; Approval records; OCSF 3002 Authentication (usage)"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-07",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-07"
+                  }
+                ],
+                "prose": "Every privileged entitlement on a Critical Information Asset has an approval by the asset owner and the CISO recorded before the grant.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-07_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-07_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "Entitlement snapshot; Approval records; config/assets.csv; config/entitlements.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_obj_ac-08",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "AC-08"
+                  }
+                ],
+                "prose": "Every successful authentication to a Critical Information Asset during the period is by an identity holding an entitlement for that asset at that time.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-7-4-5_obj_ac-08_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-7-4-5_obj_ac-08_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "OCSF 3002 Authentication; Entitlement snapshot"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-7-4-5_gdn",
+                "name": "guidance",
+                "prose": "Only the first half (safeguards for access to and use of assets, including data) is assessed. Early detection and reporting of unauthorized access is a security-monitoring duty and is out of scope."
+              }
+            ]
+          },
+          {
+            "id": "cbuae-orm-7-7",
+            "title": "Art. 7.7",
+            "props": [
+              {
+                "name": "label",
+                "value": "7.7"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cbuae-orm-7-7_smt",
+                "name": "statement",
+                "prose": "As part of the periodic review of processes and control measures, LFIs must identify processes and controls that involve manual interventions and evaluate whether these can be automated, for example through integration into and enforcement by ICT systems. Conversely, for processes and controls that are automated, the effectiveness and accuracy of the automation must form part of periodic assessments and a LFI must identify, measure, monitor and manage the related technology risks."
+              },
+              {
+                "id": "cbuae-orm-7-7_gdn",
+                "name": "guidance",
+                "prose": "Motivates the engine; not assessed as a criterion."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "art-8",
+        "title": "Article 8: ICT and Cybersecurity Management",
+        "controls": [
+          {
+            "id": "cbuae-orm-8-3",
+            "title": "Art. 8.3",
+            "props": [
+              {
+                "name": "label",
+                "value": "8.3"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cbuae-orm-8-3_smt",
+                "name": "statement",
+                "prose": "An LFI must maintain appropriate ICT and cybersecurity infrastructure to meet its current and projected business requirements under normal circumstances and in periods of stress. This infrastructure must ensure data and system integrity, confidentiality and availability and, support integrated and comprehensive risk management."
+              },
+              {
+                "id": "cbuae-orm-8-3_obj_nw-05",
+                "name": "assessment-objective",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "NW-05"
+                  }
+                ],
+                "prose": "No flow to a Critical Information Asset during the period uses a cleartext protocol, on any port.",
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-3_obj_nw-05_mth",
+                    "name": "assessment-method",
+                    "props": [
+                      {
+                        "name": "method",
+                        "value": "TEST"
+                      }
+                    ],
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-3_obj_nw-05_mth_obj",
+                        "name": "assessment-objects",
+                        "prose": "OCSF 4001 Network Activity (flow statistics); config/services.csv"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-3_gdn",
+                "name": "guidance",
+                "prose": "Used for confidentiality of data in transit to Critical Information Assets."
+              }
+            ]
+          },
+          {
+            "id": "cbuae-orm-8-6",
+            "title": "Art. 8.6",
+            "props": [
+              {
+                "name": "label",
+                "value": "8.6"
+              }
+            ],
+            "parts": [
+              {
+                "id": "cbuae-orm-8-6_smt",
+                "name": "statement",
+                "prose": "At a minimum, the ICT and cybersecurity policy must address the following in support and alignment of the LFI\u2019s business objectives:"
+              },
+              {
+                "id": "cbuae-orm-8-6_gdn",
+                "name": "guidance",
+                "prose": "Document-level: does the institution's policy address each topic?"
+              }
+            ],
+            "controls": [
+              {
+                "id": "cbuae-orm-8-6-1",
+                "title": "Art. 8.6.1",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.1"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-1_smt",
+                    "name": "statement",
+                    "prose": "Governance and oversight controls;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-1_obj_doc-8-6-1",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.1"
+                      }
+                    ],
+                    "prose": "The ICT and cybersecurity policy contains at least one clause addressing governance and oversight controls.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-1_obj_doc-8-6-1_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-1_obj_doc-8-6-1_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-2",
+                "title": "Art. 8.6.2",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.2"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-2_smt",
+                    "name": "statement",
+                    "prose": "Risk ownership, accountability and compliance;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-2_obj_doc-8-6-2",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.2"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing risk ownership, accountability and compliance.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-2_obj_doc-8-6-2_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-2_obj_doc-8-6-2_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-3",
+                "title": "Art. 8.6.3",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.3"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-3_smt",
+                    "name": "statement",
+                    "prose": "ICT security measures such as access controls, identity management, Critical Information Asset protection, network security, vendor management security, physical and environmental security, vulnerability testing, and information classification;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-01",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-01"
+                      }
+                    ],
+                    "prose": "At the end of the period, no identity holds both entitlements of any pair listed in the Segregation of Duties matrix.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-01_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-01_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Entitlement snapshot (from OCSF 3005 User Access Management events); config/sod_matrix.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-02",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-02"
+                      }
+                    ],
+                    "prose": "An identity whose HR termination date has passed is disabled no later than one business day (Monday to Friday, the UAE working week) after termination, and has no successful authentication after that deadline.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-02_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-02_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "HR/LDAP snapshots (CERT LDAP monthly files); OCSF 3001 Account Change; OCSF 3002 Authentication"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-03",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-03"
+                      }
+                    ],
+                    "prose": "Every enabled service account and AI agent has an owner who is an active employee at the end of the period.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-03_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-03_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Identity registry snapshot; HR/LDAP snapshots; OCSF 3001 Account Change (owner changes)"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-04",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-04"
+                      }
+                    ],
+                    "prose": "Every entitlement held that is not in the holder's role baseline is backed by an approved access request dated on or before the grant.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-04_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-04_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Entitlement snapshot; Access request and approval records; config/role_entitlements.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-05",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-05"
+                      }
+                    ],
+                    "prose": "No entitlement held at the end of the period has gone unused for longer than the review window (90 days). Evaluated only once 90 days of activity evidence exist.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-05_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-05_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Entitlement snapshot; OCSF 3002 Authentication to the entitlement's asset"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-06",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-06"
+                      }
+                    ],
+                    "prose": "Entitlements held are justified by the holder's role and peer group, even when a formal approval exists.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-06_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-06_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Identity-role-entitlement-asset graph; Approval records; OCSF 3002 Authentication (usage)"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-07",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-07"
+                      }
+                    ],
+                    "prose": "Every privileged entitlement on a Critical Information Asset has an approval by the asset owner and the CISO recorded before the grant.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-07_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-07_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Entitlement snapshot; Approval records; config/assets.csv; config/entitlements.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_ac-08",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "AC-08"
+                      }
+                    ],
+                    "prose": "Every successful authentication to a Critical Information Asset during the period is by an identity holding an entitlement for that asset at that time.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_ac-08_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_ac-08_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "OCSF 3002 Authentication; Entitlement snapshot"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_nw-01",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "NW-01"
+                      }
+                    ],
+                    "prose": "No permit rule in force at any time during the period allows a service marked prohibited in Annex B.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_nw-01_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_nw-01_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Firewall rule change log (state/firewall_changes.csv); config/services.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_nw-02",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "NW-02"
+                      }
+                    ],
+                    "prose": "No permit rule in force at any time during the period to the DATABASE or MANAGEMENT zone uses ANY as source zone or ANY as service.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_nw-02_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_nw-02_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Firewall rule change log (state/firewall_changes.csv)"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_nw-03",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "NW-03"
+                      }
+                    ],
+                    "prose": "Every permit rule in force at any time during the period allows only a source zone, destination zone and service combination listed in the zone matrix (Annex C).",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_nw-03_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_nw-03_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Firewall rule change log (state/firewall_changes.csv); config/zone_matrix.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_nw-04",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "NW-04"
+                      }
+                    ],
+                    "prose": "No flow observed during the period goes between zones, or uses a service, not listed in the zone matrix.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_nw-04_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_nw-04_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "OCSF 4001 Network Activity; config/zone_matrix.csv; config/assets.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_nw-05",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "NW-05"
+                      }
+                    ],
+                    "prose": "No flow to a Critical Information Asset during the period uses a cleartext protocol, on any port.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_nw-05_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "TEST"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_nw-05_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "OCSF 4001 Network Activity (flow statistics); config/services.csv"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ac",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-AC"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing access controls.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ac_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ac_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-im",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-IM"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing identity management.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-im_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-im_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cia",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-CIA"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing Critical Information Asset protection.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cia_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cia_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ns",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-NS"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing network security.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ns_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-ns_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vnd",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-VND"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing vendor management security.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vnd_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vnd_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-phy",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-PHY"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing physical and environmental security.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-phy_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-phy_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vul",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-VUL"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing vulnerability testing.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vul_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-vul_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cls",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.3-CLS"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing information classification.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cls_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-3_obj_doc-8-6-3-cls_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-3_gdn",
+                    "name": "guidance",
+                    "prose": "Document-level for all eight measures; technical tests for access controls, identity management, Critical Information Asset protection and network security."
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-4",
+                "title": "Art. 8.6.4",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.4"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-4_smt",
+                    "name": "statement",
+                    "prose": "Regular evaluation and monitoring of ICT controls and policy thresholds and limits, including risk Appetite and Tolerance thresholds;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-4_obj_doc-8-6-4",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.4"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing regular evaluation and monitoring of ICT controls and thresholds.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-4_obj_doc-8-6-4_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-4_obj_doc-8-6-4_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-4_gdn",
+                    "name": "guidance",
+                    "prose": "Document-level only; also motivates the engine."
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-5",
+                "title": "Art. 8.6.5",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.5"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-5_smt",
+                    "name": "statement",
+                    "prose": "Data management;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-5_obj_doc-8-6-5",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.5"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing data management.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-5_obj_doc-8-6-5_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-5_obj_doc-8-6-5_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-6",
+                "title": "Art. 8.6.6",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.6"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-6_smt",
+                    "name": "statement",
+                    "prose": "ICT operations and service management, such as change management and patch management;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-6_obj_doc-8-6-6",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.6"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing ICT operations and service management, such as change and patch management.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-6_obj_doc-8-6-6_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-6_obj_doc-8-6-6_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-7",
+                "title": "Art. 8.6.7",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.7"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-7_smt",
+                    "name": "statement",
+                    "prose": "Incident Response and Recovery Plans, Business Continuity Plans, and Disaster Recovery Plans;"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-7_obj_doc-8-6-7",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.7"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing incident response and recovery, business continuity and disaster recovery plans.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-7_obj_doc-8-6-7_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-7_obj_doc-8-6-7_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-8",
+                "title": "Art. 8.6.8",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.8"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-8_smt",
+                    "name": "statement",
+                    "prose": "ICT project management; and"
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-8_obj_doc-8-6-8",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.8"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing ICT project management.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-8_obj_doc-8-6-8_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-8_obj_doc-8-6-8_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "cbuae-orm-8-6-9",
+                "title": "Art. 8.6.9",
+                "props": [
+                  {
+                    "name": "label",
+                    "value": "8.6.9"
+                  }
+                ],
+                "parts": [
+                  {
+                    "id": "cbuae-orm-8-6-9_smt",
+                    "name": "statement",
+                    "prose": "Systems development and acquisition."
+                  },
+                  {
+                    "id": "cbuae-orm-8-6-9_obj_doc-8-6-9",
+                    "name": "assessment-objective",
+                    "props": [
+                      {
+                        "name": "label",
+                        "value": "DOC-8.6.9"
+                      }
+                    ],
+                    "prose": "The policy contains at least one clause addressing systems development and acquisition.",
+                    "parts": [
+                      {
+                        "id": "cbuae-orm-8-6-9_obj_doc-8-6-9_mth",
+                        "name": "assessment-method",
+                        "props": [
+                          {
+                            "name": "method",
+                            "value": "EXAMINE"
+                          }
+                        ],
+                        "parts": [
+                          {
+                            "id": "cbuae-orm-8-6-9_obj_doc-8-6-9_mth_obj",
+                            "name": "assessment-objects",
+                            "prose": "Policy clause repository"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "back-matter": {
+      "resources": [
+        {
+          "uuid": "2713fe10-a80b-5f40-ab11-15a9648dc79c",
+          "title": "Operational Risk Management Regulation (Circular No. C 1/2026)",
+          "rlinks": [
+            {
+              "href": "https://rulebook.centralbank.ae/en/rulebook/operational-risk-management-regulation"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "source": {
+    "title": "Operational Risk Management Regulation (Circular No. C 1/2026)",
+    "issuer": "Central Bank of the UAE",
+    "in_force": "2026-09-14",
+    "url": "https://rulebook.centralbank.ae/en/rulebook/operational-risk-management-regulation",
+    "retrieved": "2026-11-09", "re_verified": "2026-11-10",
+    "note": "Text quoted verbatim from the CBUAE Rulebook. Only the articles used by this thesis are included."
+  },
+  "definitions": {
+    "1.9": "Critical Information Assets: data assets whose confidentiality, integrity or availability is critical to the Critical Operations of the LFI or to the LFI’s compliance with legal and regulatory requirements, including in particular the prudential requirements applicable to the LFI and those related to the protection of Personal Data.",
+    "1.16": "Licensed Financial Institution (‘LFI’): Banks, (Re)Insurance Companies, and Other Financial Institutions licensed in accordance with the provisions of the Central Bank Law and the regulations issued in implementation thereof, to carry on a Licensed Financial Activity or more, including those which carry on the whole or a part of their activities and business in accordance with the rules and principles of Islamic Shari`ah. These institutions shall be either incorporated inside the State or a branch or subsidiary inside the State of a financial institution incorporated outside the State or in Financial Free Zones."
+  },
+  "requirements": [
+    {"id": "7.4", "article": "7", "title": "Internal Control System", "text": "An effective internal control system consists of policies, processes and systems, and the control measures they include to mitigate, reduce the likelihood, or limit the impact of associated risks. Control measures may include, but are not limited to:", "in_scope": false, "parent": null},
+    {"id": "7.4.2", "article": "7", "text": "Segregation of duties;", "in_scope": true, "parent": "7.4"},
+    {"id": "7.4.5", "article": "7", "text": "Safeguards for access to and use of the LFI’s assets or those entrusted to the LFI, including data, and measures for the early detection and reporting of unauthorized access or misuse of assets;", "in_scope": "partial", "scope_note": "Only the first half (safeguards for access to and use of assets, including data) is assessed. Early detection and reporting of unauthorized access is a security-monitoring duty and is out of scope.", "parent": "7.4"},
+    {"id": "7.7", "article": "7", "text": "As part of the periodic review of processes and control measures, LFIs must identify processes and controls that involve manual interventions and evaluate whether these can be automated, for example through integration into and enforcement by ICT systems. Conversely, for processes and controls that are automated, the effectiveness and accuracy of the automation must form part of periodic assessments and a LFI must identify, measure, monitor and manage the related technology risks.", "in_scope": "justification", "scope_note": "Motivates the engine; not assessed as a criterion.", "parent": null},
+    {"id": "8.3", "article": "8", "title": "ICT and Cybersecurity Management", "text": "An LFI must maintain appropriate ICT and cybersecurity infrastructure to meet its current and projected business requirements under normal circumstances and in periods of stress. This infrastructure must ensure data and system integrity, confidentiality and availability and, support integrated and comprehensive risk management.", "in_scope": "partial", "scope_note": "Used for confidentiality of data in transit to Critical Information Assets.", "parent": null},
+    {"id": "8.6", "article": "8", "text": "At a minimum, the ICT and cybersecurity policy must address the following in support and alignment of the LFI’s business objectives:", "in_scope": true, "scope_note": "Document-level: does the institution's policy address each topic?", "parent": null},
+    {"id": "8.6.1", "article": "8", "text": "Governance and oversight controls;", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.2", "article": "8", "text": "Risk ownership, accountability and compliance;", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.3", "article": "8", "text": "ICT security measures such as access controls, identity management, Critical Information Asset protection, network security, vendor management security, physical and environmental security, vulnerability testing, and information classification;", "in_scope": true, "scope_note": "Document-level for all eight measures; technical tests for access controls, identity management, Critical Information Asset protection and network security.", "parent": "8.6"},
+    {"id": "8.6.4", "article": "8", "text": "Regular evaluation and monitoring of ICT controls and policy thresholds and limits, including risk Appetite and Tolerance thresholds;", "in_scope": "document", "scope_note": "Document-level only; also motivates the engine.", "parent": "8.6"},
+    {"id": "8.6.5", "article": "8", "text": "Data management;", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.6", "article": "8", "text": "ICT operations and service management, such as change management and patch management;", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.7", "article": "8", "text": "Incident Response and Recovery Plans, Business Continuity Plans, and Disaster Recovery Plans;", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.8", "article": "8", "text": "ICT project management; and", "in_scope": "document", "parent": "8.6"},
+    {"id": "8.6.9", "article": "8", "text": "Systems development and acquisition.", "in_scope": "document", "parent": "8.6"}
+  ],
+  "out_of_scope": [
+    {"id": "8.5", "reason": "Protection, detection, response and recovery programmes: security operations, not conformity."},
+    {"id": "8.6.5-8.6.9 (technical)", "reason": "Process requirements; only checked at document level because no technical evidence exists in public data."},
+    {"id": "8.6.3 vendor, physical, vulnerability testing, classification (technical)", "reason": "Document-level only; no technical evidence in public datasets."},
+    {"id": "8.7.3", "reason": "Threat intelligence: security operations."},
+    {"id": "8.8", "reason": "Obsolete systems: needs asset lifecycle data not available publicly."},
+    {"id": "8.9", "reason": "Master System of Record location: not testable from the evidence used."},
+    {"id": "7.4.5 (second half)", "reason": "Early detection and reporting of unauthorized access: security monitoring."}
+  ]
+}

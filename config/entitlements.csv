@@ -1,0 +1,23 @@
+entitlement,asset_id,privileged,description
+PAY-INITIATE,PAY-APP,false,Create payment orders
+PAY-APPROVE,PAY-APP,false,Approve payment orders
+GL-POST,GL-APP,false,Post journal entries
+GL-APPROVE,GL-APP,false,Approve journal entries
+LOAN-CREATE,LOAN-APP,false,Create loan applications
+LOAN-APPROVE,LOAN-APP,false,Approve loans
+TRADE-EXECUTE,TRADE-APP,false,Execute treasury trades
+TRADE-SETTLE,TRADE-APP,false,Settle and confirm trades
+CUST-READ,CUST-DB,false,Read customer records
+CUST-WRITE,CUST-DB,false,Update customer records
+HR-READ,HR-DB,false,Read employee records
+HR-WRITE,HR-DB,false,Update employee records
+CORE-ADMIN,CORE-DB,true,Database administrator on core ledger
+CUSTDB-ADMIN,CUST-DB,true,Database administrator on customer database
+AD-ADMIN,AD-DC,true,Directory administrator
+FW-ADMIN,FW-MGMT,true,Firewall administrator
+SRV-ADMIN,FILE-SRV,true,Server administrator (non-critical servers)
+REPORT-READ,REPORT-SRV,false,Read management reports
+FILE-SHARE,FILE-SRV,false,Departmental file share
+DEV-DEPLOY,DEV-SRV,false,Deploy code to development
+CHANGE-APPROVE,REPORT-SRV,false,Approve production changes (change board tool)
+AUDIT-READ,REPORT-SRV,false,Read audit trails

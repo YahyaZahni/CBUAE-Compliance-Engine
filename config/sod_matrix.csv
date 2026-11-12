@@ -1,0 +1,7 @@
+entitlement_a,entitlement_b,reason
+PAY-INITIATE,PAY-APPROVE,Same person must not create and approve a payment
+GL-POST,GL-APPROVE,Same person must not post and approve journal entries
+LOAN-CREATE,LOAN-APPROVE,Same person must not originate and approve a loan
+TRADE-EXECUTE,TRADE-SETTLE,Front office must be separate from settlement
+DEV-DEPLOY,CHANGE-APPROVE,Developers must not approve their own changes
+AD-ADMIN,AUDIT-READ,Administrators must not review their own audit trail

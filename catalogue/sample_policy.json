@@ -1,0 +1,76 @@
+{
+  "institution": "Example Finance LFI (fictional)",
+  "title": "ICT and Cybersecurity Policy",
+  "version": "1.0",
+  "effective": "2026-01-01",
+  "note": "Fictional policy written for this thesis. It is not the policy of any real institution. Clause IDs are stable and are referenced by the criteria catalogue and the evidence base.",
+  "sections": [
+    {"id": "S1", "title": "Governance and Oversight", "cbuae_topic": "8.6.1", "clauses": [
+      {"id": "POL-GOV-01", "text": "The Board approves this policy and reviews it at least annually. The Chief Information Security Officer (CISO) owns the policy and reports ICT and cybersecurity risk to the Board Risk Committee quarterly."},
+      {"id": "POL-GOV-02", "text": "An ICT Security Steering Committee chaired by the Chief Risk Officer oversees the implementation of the controls in this policy."}
+    ]},
+    {"id": "S2", "title": "Risk Ownership, Accountability and Compliance", "cbuae_topic": "8.6.2", "clauses": [
+      {"id": "POL-RSK-01", "text": "Every information system and Critical Information Asset has a named business owner who is accountable for its ICT risk and for approving access to it."},
+      {"id": "POL-RSK-02", "text": "Compliance with this policy is assessed continuously by automated controls and annually by internal audit. Exceptions require written approval by the CISO and expire after 90 days."}
+    ]},
+    {"id": "S3", "title": "ICT Security Measures", "cbuae_topic": "8.6.3", "subsections": [
+      {"id": "S3.1", "title": "Access Control", "measure": "access controls", "clauses": [
+        {"id": "POL-AC-01", "text": "Access is granted on the principle of least privilege. Each role has a baseline set of entitlements; any entitlement outside the baseline requires an approved access request."},
+        {"id": "POL-AC-02", "text": "No identity may hold two entitlements that the Segregation of Duties matrix (Annex A) defines as conflicting."},
+        {"id": "POL-AC-03", "text": "Privileged entitlements on Critical Information Assets require prior approval by the asset owner and the CISO, recorded before the entitlement is granted."},
+        {"id": "POL-AC-04", "text": "Entitlements are reviewed every 90 days. Entitlements not used within 90 days, or not justified by the holder's role, are removed."}
+      ]},
+      {"id": "S3.2", "title": "Identity Management", "measure": "identity management", "clauses": [
+        {"id": "POL-IM-01", "text": "Every person, service account and AI agent has a unique identity. Shared accounts are prohibited."},
+        {"id": "POL-IM-02", "text": "Accounts of leavers are disabled no later than one business day after the termination date recorded by Human Resources."},
+        {"id": "POL-IM-03", "text": "Every non-human identity, including service accounts and AI agents, has an accountable human owner who is an active employee. Ownership is reassigned before the owner leaves."}
+      ]},
+      {"id": "S3.3", "title": "Critical Information Asset Protection", "measure": "Critical Information Asset protection", "clauses": [
+        {"id": "POL-CIA-01", "text": "Critical Information Assets are recorded in the asset inventory with their owner, network zone and classification."},
+        {"id": "POL-CIA-02", "text": "Connections to Critical Information Assets use only approved encrypted protocols (Annex B). Cleartext protocols are prohibited on any port."},
+        {"id": "POL-CIA-03", "text": "Critical Information Assets may be accessed only by identities that hold an entitlement for that asset."}
+      ]},
+      {"id": "S3.4", "title": "Network Security", "measure": "network security", "clauses": [
+        {"id": "POL-NS-01", "text": "The network is divided into the zones USER, SERVER, DATABASE, DMZ, MANAGEMENT and INTERNET. Traffic between zones is permitted only as defined in the zone matrix (Annex C)."},
+        {"id": "POL-NS-02", "text": "Firewalls apply default deny. Every permit rule names a specific source zone, destination zone and service; rules permitting any service or any source to the DATABASE or MANAGEMENT zones are prohibited."},
+        {"id": "POL-NS-03", "text": "The services Telnet, FTP, SMBv1 and unencrypted HTTP to internal systems are prohibited and must not be permitted by any firewall rule."}
+      ]},
+      {"id": "S3.5", "title": "Vendor Management Security", "measure": "vendor management security", "clauses": [
+        {"id": "POL-VND-01", "text": "Third-party service providers with access to ICT systems are risk-assessed before onboarding and annually, and their access follows this policy."}
+      ]},
+      {"id": "S3.6", "title": "Physical and Environmental Security", "measure": "physical and environmental security", "clauses": [
+        {"id": "POL-PHY-01", "text": "Data centres and network rooms are restricted to authorised staff, monitored, and protected against fire, flooding and power loss."}
+      ]},
+      {"id": "S3.7", "title": "Vulnerability Testing", "measure": "vulnerability testing", "clauses": [
+        {"id": "POL-VUL-01", "text": "Internal and external vulnerability scans run monthly, and penetration tests of internet-facing systems run at least annually. Critical findings are remediated within 15 days."}
+      ]},
+      {"id": "S3.8", "title": "Information Classification", "measure": "information classification", "clauses": [
+        {"id": "POL-CLS-01", "text": "Information is classified as Public, Internal, Confidential or Restricted. Data held in Critical Information Assets is classified Confidential or Restricted."}
+      ]}
+    ]},
+    {"id": "S4", "title": "Evaluation and Monitoring of ICT Controls", "cbuae_topic": "8.6.4", "clauses": [
+      {"id": "POL-EVL-01", "text": "The effectiveness of ICT controls is evaluated continuously against the thresholds in this policy and the Risk Appetite and Tolerance. Breaches of thresholds are reported to the ICT Security Steering Committee."}
+    ]},
+    {"id": "S5", "title": "Data Management", "cbuae_topic": "8.6.5", "clauses": [
+      {"id": "POL-DAT-01", "text": "Data owners define retention, quality and disposal rules for their data. Personal Data is processed in line with UAE data protection law."}
+    ]},
+    {"id": "S6", "title": "ICT Operations and Service Management", "cbuae_topic": "8.6.6", "clauses": [
+      {"id": "POL-OPS-01", "text": "Changes to production systems follow the change management process, including risk assessment, approval and rollback planning."},
+      {"id": "POL-OPS-02", "text": "Security patches are applied within 30 days of release, and within 7 days for critical vulnerabilities on Critical Information Assets."}
+    ]},
+    {"id": "S7", "title": "Incident Response, Business Continuity and Disaster Recovery", "cbuae_topic": "8.6.7", "clauses": [
+      {"id": "POL-IRP-01", "text": "The institution maintains and tests annually an Incident Response and Recovery Plan, a Business Continuity Plan and a Disaster Recovery Plan."}
+    ]},
+    {"id": "S8", "title": "ICT Project Management", "cbuae_topic": "8.6.8", "clauses": [
+      {"id": "POL-PRJ-01", "text": "ICT projects include a security risk assessment at initiation and security sign-off before go-live."}
+    ]},
+    {"id": "S9", "title": "Systems Development and Acquisition", "cbuae_topic": "8.6.9", "clauses": [
+      {"id": "POL-SDA-01", "text": "Systems are developed or acquired according to secure development requirements, including code review and security testing before deployment."}
+    ]}
+  ],
+  "annexes": {
+    "A_sod_matrix": "config/sod_matrix.csv",
+    "B_services": "config/services.csv",
+    "C_zone_matrix": "config/zone_matrix.csv"
+  }
+}
